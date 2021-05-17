@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login('ODI1MzYyOTUyMDE4MTk4NTUw.YF81Jg.UuqcdaSdBeG3E2n5GWa9573L-nE')
+const { prefix, token } = require("./auth.json")
+client.login(token);
 
 client.on('ready', () => {
     console.log(`owo!`);
@@ -29,7 +30,7 @@ client.on('message', msg=>{
             msg.reply(repliesTwo[t]);
         }
         if (msg.content === ("!help")) {
-            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n20面骰:dice20\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n抽籤:擲筊\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n\n:hugging:');
+            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n20面骰:dice20\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n抽籤:擲筊\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n\n:hugging:');
         }
         if (msg.content.includes("!擲筊")) {
             const b = Math.floor(Math.random() * repliesBuabei.length);
@@ -54,11 +55,17 @@ client.on('message', msg=>{
             const q = Math.floor(Math.random() * repliesPoker.length);
             msg.reply(repliesPoker[q]);
         }
-        if (msg.content.includes("早安")) {
+        if (msg.content.includes("!早安")) {
             if(msg.author.bot)
             return ;
             const s = Math.floor(Math.random() * repliesOhaiyo.length);
             msg.reply(repliesOhaiyo[s]);
+        }
+        if (msg.content.includes("!吃甚麼")) {
+            if(msg.author.bot)
+            return ;
+            const f = Math.floor(Math.random() * repliesfood.length);
+            msg.reply(repliesfood[f]);
         }
     }
 
@@ -212,7 +219,36 @@ client.on('message', msg=>{
     '早安!:D',
     '早ㄤㄤ:DDDD',
     ':cooking::pancakes::sparkling_heart::sparkling_heart::sparkling_heart:',
-    '早安!!!!'
+    '早安!!!!',
+    '草安:herb:'
+]
+
+, repliesfood = [
+    '炒飯',
+    '炒麵',
+    '泡麵',
+    '咖哩飯',
+    '番茄義大利麵',
+    '白醬義大利麵',
+    '青醬義大利麵',
+    '拉麵',
+    '壽司',
+    '全家',
+    '711',
+    '萊爾富',
+    'OK',
+    '機機:sparkling_heart:',
+    '三菜一湯自己弄',
+    '吃自己',
+    '便當',
+    '不要吃',
+    '手搖飲',
+    '土',
+    '肉食',
+    '素食',
+    '小吃類',
+    '火鍋',
+    '蛋包飯'
 ]
 )
 

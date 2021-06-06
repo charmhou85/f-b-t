@@ -67,7 +67,15 @@ client.on('message', msg=>{
             const f = Math.floor(Math.random() * repliesfood.length);
             msg.reply(repliesfood[f]);
         }
+        if (msg.content.includes("!人")) {
+            if(msg.author.bot)
+            return ;
+            const w = Math.floor(Math.random() * repliesMan.length);
+            msg.reply(repliesMan[w]);
+        }
     }
+
+    
 
     , replies1 = [
         ':one:',
@@ -224,6 +232,7 @@ client.on('message', msg=>{
 ]
 
 , repliesfood = [
+    '蒜味優格',
     '炒飯',
     '炒麵',
     '泡麵',
@@ -249,6 +258,12 @@ client.on('message', msg=>{
     '小吃類',
     '火鍋',
     '蛋包飯'
+]
+
+, repliesMan = [
+    '@口水。#1503',
+    '@仙人喵#3572',
+    '@蒜味優格#1549'
 ]
 )
 

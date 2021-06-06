@@ -261,7 +261,7 @@ client.on('message', msg=>{
 ]
 
 , repliesMan = [
-    '口水:sweat_drop:',
+    '口水:sweat_drops:',
     '仙人掌:cactus:',
     '爹咪:herb:',
     '銀夢:eggplant:',

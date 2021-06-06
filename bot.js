@@ -261,23 +261,23 @@ client.on('message', msg=>{
 ]
 
 , repliesMan = [
-    '口水',
-    '仙人掌',
+    '口水:sweat_drop:',
+    '仙人掌:cactus:',
     '爹咪:herb:',
-    '銀夢',
-    '糜奈',
-    '亂數',
-    '獨步',
-    'ssr',
-    '樂樂',
-    '阿凜',
-    '巴赫',
-    '大雪',
-    '烏里',
-    '仙妹',
-    '希',
-    '豬排',
-    '茶茶'
+    '銀夢:eggplant:',
+    '糜奈:sparkles:',
+    '亂數:cake:',
+    '獨步:cupcake:',
+    'ssr:salad:',
+    '樂樂:hotdog:',
+    '阿凜:honey_pot:',
+    '巴赫:shark:',
+    '大雪:snowflake:',
+    '烏里:purple_square:',
+    '仙妹:seedling:',
+    '希:bread:',
+    '豬排:pig2:',
+    '茶茶:tea:'
 ]
 )
 

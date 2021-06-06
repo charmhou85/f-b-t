@@ -266,7 +266,7 @@ client.on('message', msg=>{
     '爹咪:herb:',
     '銀夢:eggplant:',
     '糜奈:sparkles:',
-    '亂數:cake:',
+    '亂數:lolipop:',
     '獨步:cupcake:',
     'ssr:salad:',
     '樂樂:hotdog:',

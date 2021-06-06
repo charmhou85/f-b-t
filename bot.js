@@ -30,7 +30,7 @@ client.on('message', msg=>{
             msg.reply(repliesTwo[t]);
         }
         if (msg.content === ("!help")) {
-            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n20面骰:dice20\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n抽籤:擲筊\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n\n:hugging:');
+            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n20面骰:dice20\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n抽籤:擲筊\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n@人:人\n\n:hugging:');
         }
         if (msg.content.includes("!擲筊")) {
             const b = Math.floor(Math.random() * repliesBuabei.length);

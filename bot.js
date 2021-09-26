@@ -279,7 +279,7 @@ client.on('message', msg=>{
     '豬排:pig2:',
     '微風:cloud_tornado:',
     '獨步:older_man:',
-    '小吉:mahjong:'
+    '小吉:sweet_potato:'
 ]
 
 //愛尼們

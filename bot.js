@@ -281,5 +281,7 @@ client.on('message', msg=>{
     '獨步:older_man:',
     '小吉:mahjong:'
 ]
+
+//愛尼們
 )
 

@@ -267,7 +267,7 @@ client.on('message', msg=>{
     '銀夢:eggplant:',
     '糜奈:sparkles:',
     '亂數:lollipop:',
-    '獨步:cupcake:',
+    '霜飛:cloud_snow:',
     'ssr:salad:',
     '樂樂:hotdog:',
     '阿凜:honey_pot:',
@@ -277,7 +277,9 @@ client.on('message', msg=>{
     '仙妹:seedling:',
     '希:bread:',
     '豬排:pig2:',
-    '茶茶:tea:'
+    '微風:cloud_tornado:',
+    '獨步:older_man:',
+    '小吉:mahjong:'
 ]
 )
 

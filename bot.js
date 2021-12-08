@@ -149,7 +149,7 @@ client.on('message', msg=>{
     ':seven:',
     ':eight:',
     ':nine:',
-    ':ten:',
+    ':keycap_ten:',
     ':one::one:',
     ':one::two:',
     ':one::three:',
@@ -257,7 +257,8 @@ client.on('message', msg=>{
     '素食',
     '小吃類',
     '火鍋',
-    '蛋包飯'
+    '蛋包飯',
+    '泡芙'
 ]
 
 , repliesMan = [

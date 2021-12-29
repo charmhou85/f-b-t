@@ -81,7 +81,8 @@ client.on('message', msg=>{
                 if(msg.author.bot)
             return ;
                 msg.reply('投喂鬆餅=1，糖=2，蛋糕=3，布丁=4，全糖珍奶=5(可以試著按其他按鍵):');
-                switch(5){
+                
+                switch(msg.content.includes){
                 case 1:rmdhp = rmdhp + 10;msg.reply("HP+10\n");break;
                 
                 case 2:rmdhp = rmdhp + 5;msg.reply("HP+5\n");break;

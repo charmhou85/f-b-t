@@ -7,7 +7,8 @@ client.on('ready', () => {
     console.log(`owo!`);
 });
 
-
+var rmdhp = 10;
+var i = 0;
 client.on('message', msg=>{
     if (msg.content.includes("!dice8")) {
         const r = Math.floor(Math.random() * replies1.length);
@@ -73,9 +74,34 @@ client.on('message', msg=>{
             const w = Math.floor(Math.random() * repliesMan.length);
             msg.reply(repliesMan[w]);
         }
+        if (msg.content.includes("!feedrmd")) {
+            if(msg.author.bot)
+            return ;
+            while(rmdhp < 500){
+                msg.reply('投喂鬆餅=1，糖=2，蛋糕=3，布丁=4，全糖珍奶=5(可以試著按其他按鍵):');
+                switch(5){
+                case 1:rmdhp = rmdhp + 10;msg.reply("HP+10，現在的血量是%d\n",rmdhp);break;
+                
+                case 2:rmdhp = rmdhp + 5;msg.reply("HP+5，現在的血量是%d\n",rmdhp);break;
+
+                case 3:rmdhp = rmdhp + 20;msg.reply("HP+20，現在的血量是%d\n",rmdhp);break;
+
+                case 4:rmdhp = rmdhp + 15;msg.reply("HP+15，現在的血量是%d\n",rmdhp);break;
+                
+                case 5:rmdhp = rmdhp + 50;msg.reply("HP+50，現在的血量是%d\n",rmdhp);break;
+
+                default:msg.reply("請不要餵不可名狀之物給亂數，現在的血量是%d\n",rmdhp);fflush(stdin);i++;break;
+            }
+        }
+            if(i == 10)
+            {
+                msg.reply('亂數認為你沒有要認真餵他的意思，把你吃掉了\n');
+                rmdhp = 500;
+            }
+            msg.reply('亂數ㄘ飽了');
+            }
     }
 
-    
 
     , replies1 = [
         ':one:',

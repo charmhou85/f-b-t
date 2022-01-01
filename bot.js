@@ -7,8 +7,7 @@ client.on('ready', () => {
     console.log(`owo!`);
 });
 
-var rmdhp = 10;
-var i = 0;
+
 client.on('message', msg=>{
     if (msg.content.includes("!dice8")) {
         const r = Math.floor(Math.random() * replies1.length);
@@ -73,6 +72,29 @@ client.on('message', msg=>{
             return ;
             const w = Math.floor(Math.random() * repliesMan.length);
             msg.reply(repliesMan[w]);
+        }
+        if (msg.content.includes("!新年快樂")) {
+            msg.reply('\n\n新年快樂:partying_face::tada::tada::confetti_ball::fireworks::fireworks::fireworks::two::zero::two::two::sparkles:\n今天有特別籤【!抽籤】喔uwu');
+        }
+        if (msg.content.includes("!抽籤")) {
+            if(msg.author.bot)
+            return ;
+            const one = Math.floor(Math.random() * 5)+0;
+            msg.reply('的新年運勢:');
+            msg.channel.send('健康:'); 
+            msg.channel.send(repliesNY1[one]);
+            msg.channel.send('愛情:');
+            const two = Math.floor(Math.random() * 5)+0;
+            msg.channel.send(repliesNY1[two]);
+            msg.channel.send('財富:');
+            const thr = Math.floor(Math.random() * 5)+0; 
+            msg.channel.send(repliesNY1[thr]);
+            msg.channel.send('事業:');
+            const four = Math.floor(Math.random() * 5)+0; 
+            msg.channel.send(repliesNY1[four]);
+            msg.channel.send('整體:');
+            const five = Math.floor(Math.random() * 5)+0;
+            msg.channel.send(repliesNY1[five]);
         }
     }
 
@@ -285,6 +307,14 @@ client.on('message', msg=>{
     '微風:cloud_tornado:',
     '獨步:older_man:',
     '小吉:sweet_potato:'
+]
+, repliesNY1 = [
+    
+        '【大吉】',
+        '【中吉】',
+        '【小吉】',
+        '【凶】',
+        '【大凶】'
 ]
 
 //愛尼們

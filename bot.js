@@ -93,7 +93,7 @@ client.on('message', msg=>{
             const four = Math.floor(Math.random() * 5)+0; 
             msg.channel.send(repliesNY1[four]);
             msg.channel.send('整體:');
-            const five = Math.floor(Math.random() * 5)+0;
+            const five = (one+two+thr+four)/4;
             msg.channel.send(repliesNY1[five]);
         }
         if (msg.content.includes("!問")) {

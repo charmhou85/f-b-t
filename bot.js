@@ -30,7 +30,7 @@ client.on('message', msg=>{
             msg.reply(repliesTwo[t]);
         }
         if (msg.content === ("!help")) {
-            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n24面骰:dice24\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n抽籤:擲筊\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n@人:人\n機機箴言:問\n\n:hugging:');
+            msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n24面骰:dice24\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n擲筊:擲筊\n抽籤:神\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n@人:人\n機機箴言:問\n\n:hugging:');
         }
         if (msg.content.includes("!擲筊")) {
             const b = Math.floor(Math.random() * repliesBuabei.length);
@@ -102,6 +102,12 @@ client.on('message', msg=>{
             const yep = Math.floor(Math.random() * repliesNY2.length);
             msg.reply(repliesNY2[yep]);
             }
+        if (msg.content.includes("!神")) {
+            if(msg.author.bot)
+            return ;
+            const woo = Math.floor(Math.random() * repliesBuaqian.length);
+            msg.reply(repliesBuaqian[woo]);
+            }
     }
 
 
@@ -150,11 +156,9 @@ client.on('message', msg=>{
 ]
 
 , repliesBuabei = [
-    '大吉!!',
-    '中吉!',
-    '小吉',
-    '凶',
-    '大凶!!'
+    '聖筊:表示同意，允許',
+    '笑筊:表示不明，考慮中',
+    '陰筊:表示憤怒，不宜行事'
 ]
 
 , repliesToday = [
@@ -339,6 +343,13 @@ client.on('message', msg=>{
     '我們不行，往往不是因為我們不行，而是因為別人說了我們不行。',
     '只有舍，才有得。',
     '熱愛並不代表要放棄一切去愛。'
+]
+, repliesBuaqian = [
+    '大吉!!',
+    '中吉!',
+    '小吉',
+    '凶',
+    '大凶!!'
 ]
 
 //愛尼們

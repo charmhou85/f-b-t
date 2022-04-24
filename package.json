@@ -4,7 +4,7 @@
   "description": "bot",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js",
+    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

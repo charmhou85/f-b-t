@@ -311,9 +311,7 @@ client.on('message', msg=>{
     '巴赫:shark:',
     '大雪:snowflake:',
     '烏里:purple_square:',
-    '仙妹:seedling:',
     '希:bread:',
-    '豬排:pig2:',
     '微風:cloud_tornado:',
     '獨步:older_man:',
     '小吉:sweet_potato:'

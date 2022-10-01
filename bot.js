@@ -298,8 +298,6 @@ client.on('message', msg=>{
 ]
 
 , repliesMan = [
-    '口水:sweat_drops:',
-    '仙人掌:cactus:',
     '爹咪:herb:',
     '銀夢:eggplant:',
     '阿凜:sparkles:',
@@ -309,11 +307,8 @@ client.on('message', msg=>{
     '糜奈:hotdog:',
     '樂樂:penguin:',
     '巴赫:shark:',
-    '大雪:snowflake:',
     '烏里:purple_square:',
-    '希:bread:',
     '微風:cloud_tornado:',
-    '獨步:older_man:',
     '小吉:sweet_potato:'
 ]
 , repliesNY1 = [

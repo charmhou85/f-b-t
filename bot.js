@@ -304,11 +304,7 @@ client.on('message', msg=>{
     '亂數:lollipop:',
     '霜飛:cloud_snow:',
     'ssr:salad:',
-    '糜奈:hotdog:',
-    '樂樂:penguin:',
-    '巴赫:shark:',
     '烏里:purple_square:',
-    '微風:cloud_tornado:',
     '小吉:sweet_potato:'
 ]
 , repliesNY1 = [

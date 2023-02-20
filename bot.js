@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { prefix, token } = require("./auth.json")
-client.login(token);
+const auth = require("./JSONhome/auth.json");
+const prefix = require("./JSONhome/prefix.json");
+client.login(auth.key);
 
 client.on('ready', () => {
     console.log(`owo!`);

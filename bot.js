@@ -2,10 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./JSONhome/auth.json");
 const prefix = require("./JSONhome/prefix.json");
+const GetGas = require("./Script/GetGAS.js");
+
+let BseExcelData = false;
+
 client.login(auth.key);
 
 client.on('ready', () => {
-    console.log(`owo!`);
+    GetGas.getBaseExcel(function(dataED){
+        if(dataED){
+            BaseExcelData = dataED
+        } console.log(`owo!`);
+    })
 });
 
 

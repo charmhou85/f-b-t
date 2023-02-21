@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require('./auth.json');
 
-client.login(auth);
+client.login(auth.key);
 
 client.on('ready', () => {
     console.log(`owo!`);

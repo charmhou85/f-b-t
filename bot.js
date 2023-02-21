@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 process.env.KEY;
-const auth = require('./auth.json');
+//const auth = require('./auth.json');
 
 client.login(KEY);
 

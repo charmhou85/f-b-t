@@ -1,19 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const auth = require("./JSONhome/auth.json");
-const prefix = require("./JSONhome/prefix.json");
-const GetGas = require("./Script/GetGAS.js");
-
-let BseExcelData = false;
+const auth = require("auth.json");
 
 client.login(auth.key);
 
 client.on('ready', () => {
-    GetGas.getBaseExcel(function(dataED){
-        if(dataED){
-            BaseExcelData = dataED
-        } console.log(`owo!`);
-    })
+    console.log(`owo!`);
 });
 
 

@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-process.env.KEY1;
+require('dotenv').config();
+
 //const auth = require('./auth.json');
 
-client.login(KEY1);
+client.login(process.env.KEY1);
 
 client.on('ready', () => {
     console.log(`owo!`);

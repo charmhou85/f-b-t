@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const auth = require("/JSONhome/auth.json");
-const prefix = require("/JSONhome/prefix.json");
-const GetGas = require("/Script/GetGAS.js");
+const auth = require("./JSONhome/auth.json");
+const prefix = require("./JSONhome/prefix.json");
+const GetGas = require("./Script/GetGAS.js");
 
 let BseExcelData = false;
 

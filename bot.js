@@ -11,44 +11,66 @@ client.on('ready', () => {
 
 client.on('message', msg=>{
     if (msg.content.includes("!dice8")) {
+        if(msg.author.bot)
+            return ;
         const r = Math.floor(Math.random() * replies1.length);
         msg.reply(replies1[r]);
         }
         if (msg.content.includes("!cake")) {
+            if(msg.author.bot)
+            return ;
             const c = Math.floor(Math.random() * repliesCake.length);
             msg.reply(repliesCake[c]);
         }
         if (msg.content.includes("!heart")) {
+            if(msg.author.bot)
+            return ;
             const l = Math.floor(Math.random() * repliesHeart.length);
             msg.reply(repliesHeart[l]);
         }
         if (msg.content.includes("!mask")) {
+            if(msg.author.bot)
+            return ;
             const m = Math.floor(Math.random() * repliesMask.length);
             msg.reply(repliesMask[m]);
         }
         if (msg.content.includes("!two")) {
+            if(msg.author.bot)
+            return ;
             const t = Math.floor(Math.random() * repliesTwo.length);
             msg.reply(repliesTwo[t]);
         }
         if (msg.content === ("!help")) {
+            if(msg.author.bot)
+            return ;
             msg.reply('\n\n:star:骰子指令:star:\n\n8面骰:dice8\n24面骰:dice24\n蛋糕骰:cake\n面具骰:mask\n愛心骰:heart\nOX兩面骰:two\n猜拳:pss\n\n記得在指令前加上「!」喔:D\n\n:star:其他指令:star:\n機器人介紹:help\n擲筊:擲筊\n抽籤:神\n占卜:今日運勢\n獲得愛心:愛尼\n撲克牌:poker(因為足足有52種所以不推薦當安價骰子)\n機機說早安:早安\n食物調查:吃甚麼\n@人:人\n機機箴言:問\n\n:hugging:');
         }
         if (msg.content.includes("!擲筊")) {
+            if(msg.author.bot)
+            return ;
             const b = Math.floor(Math.random() * repliesBuabei.length);
             msg.reply(repliesBuabei[b]);
         }
         if (msg.content.includes("!今日運勢")) {
+            if(msg.author.bot)
+            return ;
             const o = Math.floor(Math.random() * repliesToday.length);
             msg.reply(repliesToday[o]);
         }
         if (msg.content === ("!愛尼")) {
+            if(msg.author.bot)
+            return ;
             msg.reply(':smiling_face_with_3_hearts::sparkling_heart::cupid::gift_heart:');
         }
         if (msg.content.includes("!dice24")) {
+            if(msg.author.bot)
+            return ;
             const s = Math.floor(Math.random() * replies24.length);
             msg.reply(replies24[s]);
         }
         if (msg.content.includes("!pss")) {
+            if(msg.author.bot)
+            return ;
             const p = Math.floor(Math.random() * repliesPSS.length);
             msg.reply(repliesPSS[p]);
         }
@@ -75,6 +97,8 @@ client.on('message', msg=>{
             msg.reply(repliesMan[w]);
         }
         if (msg.content.includes("!新年快樂")) {
+            if(msg.author.bot)
+            return ;
             msg.reply('\n\n新年快樂:partying_face::tada::tada::confetti_ball::fireworks::fireworks::fireworks::two::zero::two::two::sparkles:\n今天有特別籤【!抽籤】喔uwu');
         }
         if (msg.content.includes("!抽籤")) {
